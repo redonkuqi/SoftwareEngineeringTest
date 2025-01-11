@@ -23,13 +23,14 @@ public class Main {
     }
 
     public static double divide(int a, int b) {
-        if (b != 0) {
+        try {
             return (double) a / b;
-        } else {
-            System.out.println("Division by zero is not allowed");
+        } catch (ArithmeticException e) {
+            System.out.println("Error: Division by zero");
             return 0;
         }
     }
+
 
     public static int modulus(int a, int b) {
         return a % b;
