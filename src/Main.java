@@ -6,6 +6,8 @@ public class Main {
         System.out.println("Subtraction: " + subtract(a, b));
         System.out.println("Multiplication: " + multiply(a, b));
         System.out.println("Division: " + divide(a, b));
+        System.out.println("Exponentiation: " + exponentiation(a, b));
+
     }
 
     public static int add(int a, int b) {
@@ -28,4 +30,9 @@ public class Main {
             return 0;
         }
     }
+
+    public static int exponentiation(int a, int b) {
+        return (int) Math.pow(a, b);
+    }
+
 }
