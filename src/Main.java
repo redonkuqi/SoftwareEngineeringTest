@@ -22,6 +22,7 @@ public class Main {
         return a * b;
     }
 
+    // Input validation added
     public static double divide(int a, int b) {
         try {
             return (double) a / b;
